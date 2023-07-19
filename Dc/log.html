@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>แอปพลิเคชันบันทึกงาน</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+      height: 100vh;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    button.delete {
+      background-color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <h1>application recording</h1>
+
+  <input type="text" id="inputItem" placeholder="ใส่รายการที่ต้องการบันทึก">
+  <button id="addItemBtn">เพิ่ม</button>
+
+  <ul id="itemList"></ul>
+
+  <script src="loggy.js"></script>
+</body>
+</html>
